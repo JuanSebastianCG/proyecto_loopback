@@ -1,0 +1,30 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "UserName2",
+  "last_name": "userLastname2",
+  "age": 30,
+  "email": "user2@ucaldas.edu.co"
+}
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+GET http://localhost:3000/api/users/620709c607dbcfd5427e454c HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/users/620709c607dbcfd5427e454c HTTP/1.1
+
+###
+PUT http://localhost:3000/api/users/620709c607dbcfd5427e454c HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "santiago",
+  "last_name": "cardenas",
+  "age": 18,
+  "email": "user3@ucaldas.edu.co"
+}
